@@ -11,7 +11,7 @@ npm run build    # outputs static files to dist/
 ```
 
 All content (experience, case studies, projects, skills, links) is in `src/data.ts`.
-Project screenshots are in `public/projects/`, and the résumé PDF is `public/Samar-Karnani-Resume.pdf`.
+Project screenshots are in `public/projects/`, and the resume PDF is `public/Samar-Karnani-Resume.pdf`.
 
 ## Deploy (GitHub Pages + GoDaddy domain)
 

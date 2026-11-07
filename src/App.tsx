@@ -100,7 +100,7 @@ function Hero() {
           See the work
         </a>
         <a className="btn" href={profile.resume} target="_blank" rel="noreferrer">
-          Résumé (PDF)
+          Resume (PDF)
         </a>
       </div>
     </section>
@@ -283,7 +283,7 @@ function Contact() {
         </li>
         <li>
           <a href={profile.resume} target="_blank" rel="noreferrer">
-            Résumé ↗
+            Resume ↗
           </a>
         </li>
       </ul>

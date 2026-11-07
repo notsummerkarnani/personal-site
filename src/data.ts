@@ -13,10 +13,10 @@ export const profile = {
 export type Metric = { value: string; label: string };
 
 export const metrics: Metric[] = [
-  { value: '10,500+', label: 'labor hours saved per year across shipped automations' },
-  { value: '55,000', label: 'work orders a year flowing through one workflow I built' },
+  { value: '10,000+', label: 'labor hours saved per year across shipped automations' },
+  { value: '100,000+', label: 'slips processed through vision language model annually' },
   { value: '3% → 0.7%', label: 'receiving error rate after OCR + vision-model intake' },
-  { value: '$100K+', label: 'in operational cost removed' },
+  { value: '$300,000+', label: 'in annual operational cost removed' },
 ];
 
 export type Role = { title: string; dates: string; points: string[] };
@@ -82,34 +82,34 @@ export type CaseStudy = {
 
 export const caseStudies: CaseStudy[] = [
   {
-    id: 'RCV-01',
-    title: 'AI-assisted receiving',
+    id: 'RMS-01',
+    title: 'Receiving Management System',
     problem:
-      'Inbound material was keyed into the ERP by hand from packing slips, slowly and with a ~3% error rate.',
+      'Inbound material was keyed into the ERP by hand from packing slips, slowly and with human error.',
     built:
-      'A receiving app that reads inbound paperwork with OCR and a cloud vision-language model on Azure AI Foundry, then enters the data into the ERP automatically.',
+      'A receiving app that scans packing slips, extracts the data with a cloud vision language model, validates it and routes it to the ERP.',
     result: 'Errors down to 0.7%. 6,300+ labor hours saved a year.',
-    stack: ['TypeScript', 'React', 'Node.js', 'Azure AI Foundry', 'MSSQL'],
+    stack: ['TypeScript', 'React', 'Azure AI Foundry', 'MSSQL'],
   },
   {
-    id: 'MTL-02',
-    title: 'Stockroom-to-cell material drops',
+    id: 'DMS-02',
+    title: 'Drop Management System',
     problem:
       'Getting parts from the stockroom to assembly cells depended on manual requests, handoffs and chasing status.',
     built:
       'An automated workflow that creates, routes and tracks material drops end to end, integrated with floor infrastructure and Microsoft Graph.',
     result: '~55,000 work orders a year. >95% faster cycle time. ~4,200 hours saved.',
-    stack: ['Node.js', 'REST APIs', 'Microsoft Graph', 'SQL'],
+    stack: ['Node.js', 'REST APIs', 'Playwright'],
   },
   {
-    id: 'MSH-03',
-    title: 'Machine-shop request platform',
+    id: 'MSM-03',
+    title: 'Machine-shop request management',
     problem:
-      'Urgent machine-shop jobs arrived through scattered channels with no shared priority or status.',
+      'Machine-shop jobs arrived through scattered channels with no shared priority, status or tracking.',
     built:
-      'A centralized, role-based request platform, plus Kanban automation that creates and syncs cards from customer build plans.',
+      'A centralized, role-based request platform, with approval loops and audit logs.',
     result: 'Cycle time cut ~50–65%. On-time completion from ~70% to >95%.',
-    stack: ['React', 'MaterialUI', 'Sequelize', 'Kanbanize API'],
+    stack: ['React', 'MaterialUI', 'Sequelize'],
   },
 ];
 
